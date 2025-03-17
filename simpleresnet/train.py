@@ -49,7 +49,7 @@ def train_model(epochs=5, batch_size=128, lr=0.001):
             images, labels = images.to(device), labels.to(device)  # Move data to GPU
 
             optimizer.zero_grad()
-            outputs = model(images)
+            outputs = model(images) # h x w x d
             loss = criterion(outputs, labels)
             loss.backward()
             optimizer.step()
@@ -78,6 +78,19 @@ def train_model(epochs=5, batch_size=128, lr=0.001):
 
     print("🎉 Training complete.")
     wandb.finish()
+
+
+## pesudocode for loss
+def new_loss(outputs):
+    x = einops.reshape ("h w c -> (hw) c", outputs)
+    x_T = einops.reshape( "hw c -> c hw")
+    matric = einops( 'hw1 c, c hw2 -> hw1 hw2', x, x_T)
+    torch.sort(martic, dim=-1)
+    ones_matrics
+
+    return ((ones_matrics - matric)**2).mean()
+
+
 
 if __name__ == "__main__":
     train_model(epochs=5)
