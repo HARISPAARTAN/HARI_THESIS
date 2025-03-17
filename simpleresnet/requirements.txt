@@ -1,0 +1,8 @@
+torch  # Automatically installs the latest compatible version
+torchvision
+torchaudio
+wandb
+requests
+tqdm
+numpy
+Pillow
