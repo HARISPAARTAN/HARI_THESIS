@@ -1,0 +1,39 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Patch Similarity Matrix</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                font-family: Arial, sans-serif;
+            }
+            th, td {
+                border: 1px solid #dddddd;
+                text-align: center;
+                padding: 8px;
+                width: 60px;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            .high-similarity {
+                background-color: #ffeb3b;
+                font-weight: bold;
+            }
+            .med-similarity {
+                background-color: #a5d6a7;
+            }
+            .low-similarity {
+                background-color: #90caf9;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Patch Similarity Matrix (7x7 section)</h2>
+        <table>
+    <tr><th></th><th>P0</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th></tr><tr><th>P0</th><td class="high-similarity">1.0000</td><td class="high-similarity">0.9201</td><td class="med-similarity">0.8742</td><td class="low-similarity">0.6493</td><td class="low-similarity">0.4549</td><td class="low-similarity">0.3976</td><td class="low-similarity">0.3173</td></tr><tr><th>P1</th><td class="high-similarity">0.9201</td><td class="high-similarity">1.0000</td><td class="high-similarity">0.9212</td><td class="low-similarity">0.6859</td><td class="low-similarity">0.4531</td><td class="low-similarity">0.3494</td><td class="low-similarity">0.2353</td></tr><tr><th>P2</th><td class="med-similarity">0.8742</td><td class="high-similarity">0.9212</td><td class="high-similarity">1.0000</td><td class="med-similarity">0.7935</td><td class="low-similarity">0.5383</td><td class="low-similarity">0.4200</td><td class="low-similarity">0.2705</td></tr><tr><th>P3</th><td class="low-similarity">0.6493</td><td class="low-similarity">0.6859</td><td class="med-similarity">0.7935</td><td class="high-similarity">1.0000</td><td class="med-similarity">0.8370</td><td class="low-similarity">0.6638</td><td class="low-similarity">0.4014</td></tr><tr><th>P4</th><td class="low-similarity">0.4549</td><td class="low-similarity">0.4531</td><td class="low-similarity">0.5383</td><td class="med-similarity">0.8370</td><td class="high-similarity">1.0000</td><td class="med-similarity">0.7939</td><td class="low-similarity">0.4842</td></tr><tr><th>P5</th><td class="low-similarity">0.3976</td><td class="low-similarity">0.3494</td><td class="low-similarity">0.4200</td><td class="low-similarity">0.6638</td><td class="med-similarity">0.7939</td><td class="high-similarity">1.0000</td><td class="med-similarity">0.7242</td></tr><tr><th>P6</th><td class="low-similarity">0.3173</td><td class="low-similarity">0.2353</td><td class="low-similarity">0.2705</td><td class="low-similarity">0.4014</td><td class="low-similarity">0.4842</td><td class="med-similarity">0.7242</td><td class="high-similarity">1.0000</td></tr>
+        </table>
+    </body>
+    </html>
+    
